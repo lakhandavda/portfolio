@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishit Davda | Full-Stack Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Nishit Pravinbhai Davda – Full-Stack Developer specializing in MERN stack, REST APIs, and modern web applications." />
+  <meta name="keywords" content="Nishit Davda, Full Stack Developer, MERN Stack, Node.js, React.js, Portfolio" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"> </div>
+
+  <!-- ===== LOADER ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <span class="loader-text">ND</span>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>ND<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="mailto:npd1975emil@gmail.com" class="btn-hire" id="hireBtn">Hire Me</a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="line-1">Hi, I'm</span>
+        <span class="line-2 gradient-text">Nishit Davda</span>
+      </h1>
+      <div class="hero-role">
+        <span class="static-text">A passionate</span>
+        <span class="typed-wrapper">
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor-blink">|</span>
+        </span>
+      </div>
+      <p class="hero-desc">
+        Full-Stack Developer specializing in the MERN stack. I build scalable web applications, design REST APIs, and
+        craft seamless user experiences.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary" id="viewWorkBtn">
+          <span>View My Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn-secondary" id="contactBtn">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="7">0</span>+
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-illustration">
+      <div class="code-window">
+        <div class="window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="window-title">nishit.js</span>
+        </div>
+        <div class="code-body">
+          <pre><code><span class="kw">const</span> <span class="var">developer</span> = {
+  <span class="key">name</span>: <span class="str">"Nishit Davda"</span>,
+  <span class="key">role</span>: <span class="str">"Full-Stack Dev"</span>,
+  <span class="key">stack</span>: [
+    <span class="str">"React"</span>, <span class="str">"Node.js"</span>,
+    <span class="str">"Express"</span>, <span class="str">"MongoDB"</span>
+  ],
+  <span class="key">status</span>: <span class="str">"Building 🚀"</span>,
+  <span class="key">passion</span>: <span class="str">"Backend Dev"</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who Am I</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Passionate about building things that live on the internet</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap" data-reveal="left">
+          <div class="avatar-glow"></div>
+          <div class="avatar-card">
+            <div class="avatar-initials">ND</div>
+            <div class="avatar-info">
+              <div class="avatar-status">
+                <span class="status-dot"></span>
+                <span>Open to Work</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-badges">
+            <div class="about-badge"><span>🎓</span> B.Tech IT</div>
+            <div class="about-badge"><span>💼</span> MERN Intern</div>
+            <div class="about-badge"><span>📍</span> India</div>
+          </div>
+        </div>
+        <div class="about-content" data-reveal="right">
+          <h3 class="about-heading">Backend-Focused Full-Stack Developer</h3>
+          <p class="about-text">
+            I'm a <strong>B.Tech Information Technology</strong> student at Parul University, Vadodara, with a
+            deep passion for backend development. I love solving real-world problems by building well-architected APIs,
+            managing complex databases, and integrating third-party services.
+          </p>
+          <p class="about-text">
+            Currently interning as a <strong>MERN Stack Developer at iTechBrains, Ahmedabad</strong>, I work on
+            full-stack web applications — from designing REST APIs to shipping production-ready features.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="h-icon">⚡</span>
+              <div>
+                <strong>Quick Learner</strong>
+                <p>Adapt rapidly to new technologies and frameworks</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="h-icon">🏗️</span>
+              <div>
+                <strong>System Thinker</strong>
+                <p>Design scalable architectures and clean code structures</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="h-icon">🔗</span>
+              <div>
+                <strong>Integration Expert</strong>
+                <p>Payment gateways, auth systems, real-time features</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/nishit-pravinbhai-davda-63535b240/" target="_blank"
+              class="social-link linkedin" id="linkedinBtn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/lakhandavda" target="_blank" class="social-link github" id="githubBtn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="https://leetcode.com/u/DAsqUut51d/" target="_blank" class="social-link leetcode" id="leetcodeBtn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+              </svg>
+              LeetCode
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education <span class="gradient-text">Background</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-reveal="up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2023 – 2026</span>
+            <h3>B.Tech in Information Technology</h3>
+            <p class="timeline-inst">Parul University, Vadodara</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-reveal="up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2020 – 2023</span>
+            <h3>Diploma in Information Technology</h3>
+            <p class="timeline-inst">Government Polytechnic, Rajkot</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-reveal="up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">Mar 2020</span>
+            <h3>10th Grade</h3>
+            <p class="timeline-inst">Bhavan's Shri A.K. Doshi Vidyalaya, Jamnagar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies I work with to build amazing products</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category" data-reveal="up">
+          <div class="skill-cat-header">
+            <span class="skill-icon">💬</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Core Java</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-category" data-reveal="up">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🎨</span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">React.js</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+        <div class="skill-category" data-reveal="up">
+          <div class="skill-cat-header">
+            <span class="skill-icon">⚙️</span>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Node.js</span>
+            <span class="skill-tag primary">Express.js</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">JWT Auth</span>
+          </div>
+        </div>
+        <div class="skill-category" data-reveal="up">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🗄️</span>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-category" data-reveal="up">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🔧</span>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Vercel</span>
+          </div>
+        </div>
+        <div class="skill-category" data-reveal="up">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🧠</span>
+            <h3>Concepts</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Razorpay Integration</span>
+          </div>
+        </div>
+        <div class="skill-category" data-reveal="up">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🤖</span>
+            <h3>AI Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">GitHub Copilot</span>
+            <span class="skill-tag primary">ChatGPT</span>
+            <span class="skill-tag">Gemini</span>
+            <span class="skill-tag">AI-Assisted Dev</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Things I've built with passion and purpose</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card" data-reveal="up" id="project-chat">
+          <div class="project-num">01</div>
+          <div class="project-header">
+            <div class="project-icon">💬</div>
+            <div class="project-meta">
+              <span class="project-date">Mar 2025</span>
+              <div class="project-links">
+                <a href="https://github.com/lakhandavda" class="p-link" title="GitHub" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+                <a href="https://chating-app-karo-vatuu.onrender.com/" class="p-link" title="Live Demo" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h3 class="project-title">Karo Vatuu</h3>
+          <p class="project-subtitle">Real-Time Chat Application</p>
+          <p class="project-desc">
+            Secure, real-time messaging app with one-to-one chat, typing indicators, and persistent message storage.
+            Features JWT-based authentication and responsive UI.
+          </p>
+          <div class="project-stack">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Socket.io</span>
+            <span>MongoDB</span>
+            <span>JWT</span>
+          </div>
+          <div class="project-features">
+            <div class="feat"><span>✓</span> Real-time messaging via Socket.io</div>
+            <div class="feat"><span>✓</span> JWT Authentication</div>
+            <div class="feat"><span>✓</span> Typing indicators</div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-reveal="up" id="project-bakery">
+          <div class="project-num">02</div>
+          <div class="project-header">
+            <div class="project-icon">🥖</div>
+            <div class="project-meta">
+              <span class="project-date">Jun 2025</span>
+              <div class="project-links">
+                <a href="https://github.com/lakhandavda" class="p-link" title="GitHub" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+                <a href="https://shree-rannade-swad-point.vercel.app/" class="p-link" title="Live Demo" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h3 class="project-title">Shree Rannade Swad Point</h3>
+          <p class="project-subtitle">E-Commerce Web Application</p>
+          <p class="project-desc">
+            Responsive e-commerce website for a local bakery & grocery shop with product gallery, category filters, and
+            integrated contact via WhatsApp & Google Maps. Deployed on Vercel.
+          </p>
+          <div class="project-stack">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Tailwind CSS</span>
+            <span>Vercel</span>
+          </div>
+          <div class="project-features">
+            <div class="feat"><span>✓</span> Product gallery & category filters</div>
+            <div class="feat"><span>✓</span> WhatsApp & Google Maps integration</div>
+            <div class="feat"><span>✓</span> Deployed on Vercel</div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-reveal="up" id="project-rental">
+          <div class="project-num">03</div>
+          <div class="project-header">
+            <div class="project-icon">🏠</div>
+            <div class="project-meta">
+              <span class="project-date">Jul 2025</span>
+              <div class="project-links">
+                <a href="https://github.com/lakhandavda" class="p-link" title="GitHub" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h3 class="project-title">EaseOn Rent</h3>
+          <p class="project-subtitle">Full-Stack Rental Booking Platform</p>
+          <p class="project-desc">
+            Online rental property booking system with secure authentication, real-time booking checks, Razorpay
+            payments, property filtering, reviews, ratings, and notifications.
+          </p>
+          <div class="project-stack">
+            <span>MongoDB</span>
+            <span>Express.js</span>
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Razorpay</span>
+          </div>
+          <div class="project-features">
+            <div class="feat"><span>✓</span> Razorpay payment integration</div>
+            <div class="feat"><span>✓</span> Real-time booking checks</div>
+            <div class="feat"><span>✓</span> Reviews, ratings & notifications</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Work</span>
+        <h2 class="section-title">Internship <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="exp-card" data-reveal="up">
+        <div class="exp-left">
+          <div class="exp-logo">iT</div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">MERN Stack Developer Intern</h3>
+              <p class="exp-company">iTechBrains, Ahmedabad</p>
+            </div>
+            <span class="exp-duration">Feb 2026 – Present</span>
+          </div>
+          <ul class="exp-list">
+            <li>Working on full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js)
+            </li>
+            <li>Developing REST APIs and integrating them seamlessly with frontend applications</li>
+            <li>Implementing authentication flows, database operations, and complex backend logic</li>
+          </ul>
+          <div class="exp-tags">
+            <span>MongoDB</span>
+            <span>Express.js</span>
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="achievements section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements & <span class="gradient-text">Certifications</span></h2>
+      </div>
+      <div class="ach-grid">
+        <div class="ach-card" data-reveal="up" id="ach-toc">
+          <div class="ach-icon">🏆</div>
+          <div class="ach-content">
+            <span class="ach-provider">NPTEL Online Certification</span>
+            <h3>Theory of Computation</h3>
+            <span class="ach-year">2024</span>
+          </div>
+          <div class="ach-badge">Certified</div>
+        </div>
+        <div class="ach-card" data-reveal="up" id="ach-cn">
+          <div class="ach-icon">🌐</div>
+          <div class="ach-content">
+            <span class="ach-provider">NPTEL Online Certification</span>
+            <h3>Computer Networks and Internet Protocol</h3>
+            <span class="ach-year">2024</span>
+          </div>
+          <div class="ach-badge">Certified</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Say Hello</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind or just want to connect? I'd love to hear from you!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal="left">
+          <div class="contact-item" id="contact-email">
+            <div class="contact-icon">📧</div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:npd1975emil@gmail.com" class="contact-val">npd1975emil@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-phone">
+            <div class="contact-icon">📱</div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+916352318850" class="contact-val">+91 6352318850</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-location">
+            <div class="contact-icon">📍</div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-val">India</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/nishit-pravinbhai-davda-63535b240/" target="_blank" class="cs-link"
+              id="cs-linkedin">LinkedIn</a>
+            <a href="https://github.com/lakhandavda" target="_blank" class="cs-link" id="cs-github">GitHub</a>
+            <a href="https://leetcode.com/u/DAsqUut51d/" target="_blank" class="cs-link" id="cs-leetcode">LeetCode</a>
+          </div>
+        </div>
+        <!-- Temporarily removed contact form -->
+        <!-- 
+        <form class="contact-form" id="contactForm" data-reveal="right">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="submitBtn">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <span>✅</span> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>ND<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-text">Designed & Built by <strong>Nishit Davda</strong> with ❤️</p>
+      <p class="footer-copy">© 2026 Nishit Pravinbhai Davda. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
